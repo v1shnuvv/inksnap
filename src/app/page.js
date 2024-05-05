@@ -1,4 +1,4 @@
-import CategoryList from '@/components/categoryList/categoryList'
+import CategoryList from '@/components/categoryList/CategoryList'
 import styles from './homePage.module.css'
 import Featured from '@/components/featured/Featured'
 import CardList from '@/components/cardList/CardList'

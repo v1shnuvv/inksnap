@@ -1,0 +1,13 @@
+.container{
+    margin-top: 50px;
+    color: var(--softTextColor);
+    padding: 20px 0px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.image{
+    border-radius: 50%;
+}

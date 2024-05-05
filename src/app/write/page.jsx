@@ -2,10 +2,12 @@
 import Image from "next/image"
 import styles from "./writePage.module.css"
 import { useState } from "react"
-import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.bubble.css';
+import dynamic from "next/dynamic";
 
 export default function WritePage(){
+const ReactQuill = dynamic(()=> import('react-quill'),{ssr: false}) ;
+
     const [open, setOpen] = useState(false);
     const [value, setValue] = useState('');
     return (

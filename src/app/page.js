@@ -1,14 +1,18 @@
-
+import CategoryList from '@/components/categoryList/categoryList'
+import styles from './homePage.module.css'
+import Featured from '@/components/featured/Featured'
+import CardList from '@/components/cardList/CardList'
+import Menu from '@/components/menu/Menu'
 
 export default function Home() {
   return (
-    <main >
-      <div >
-        <p>
-          Get started by editing&nbsp;
-        </p>   
+    <div className={styles.container}>
+      <Featured />
+      <CategoryList />
+      <div className={styles.content}>
+        <CardList />
+        <Menu />
       </div>
-
-    </main>
-  )
+    </div>
+  );
 }

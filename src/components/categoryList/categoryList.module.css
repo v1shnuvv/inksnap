@@ -1,0 +1,29 @@
+.title{
+    margin: 20px 0px;
+}
+
+.categories{
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; */
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) ;
+}
+.category{
+    display: flex;    
+    align-items: center;
+    gap: 10px;
+    text-transform: capitalize;
+    height: 60px;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+.category.style{
+    background-color: rgba(245, 166, 63, 0.427);
+    
+}
+.image{
+    border-radius: 50%;
+}

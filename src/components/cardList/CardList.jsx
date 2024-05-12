@@ -1,9 +1,11 @@
+"use client"
 import Card from '../card/Card'
 import Pagination from '../pagination/Pagination'
 import styles from './cardList.module.css'
 
 const getPosts = async(page)=>{
-    const res = await fetch(`${process.env.BASE_URL}}/posts?page=${page}`);
+    
+    const res = await fetch(`${process.env.BASE_URL}/posts?page=${page}`);
     if(!res.ok){
         throw new Error("Failed to fetch data!")
     }

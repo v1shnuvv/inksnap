@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 
-const isProd = process.env.NODE_ENV === "production"
+const isProd = true;
 const nextConfig = {
-    output: "export",
+    // output: "export",
     distDir: 'dist',
     basePath: isProd ? '/inksnap' : '',
     images: { unoptimized: true }

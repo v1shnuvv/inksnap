@@ -3,8 +3,11 @@ import { NextResponse } from "next/server";
 
 export const GET = async (req) =>{
     try {
-        const {searchParams} = new URL(req.url);
-        const page = searchParams.get("page");
+        // const {searchParams} = new URL(req.url);
+        // const page = searchParams.get("page");
+        // const postPerPage = 2;
+
+        const page = 1;
         const postPerPage = 2;
 
         const query = {
